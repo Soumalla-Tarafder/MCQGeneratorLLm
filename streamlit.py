@@ -3,11 +3,11 @@ import json
 import traceback
 import pandas as pd
 from dotenv import load_dotenv
-from mcqGenerator.utils import read_file,get_table_data
+from src.mcqGenerator.utils import read_file,get_table_data
 import streamlit as st
 from langchain.callbacks import get_openai_callback
-from mcqGenerator.MCQGenerator import generate_evaluate_chain
-from mcqGenerator.logger import logging
+from src.mcqGenerator.MCQGenerator import generate_evaluate_chain
+from src.mcqGenerator.logger import logging
 
 #loading json file
 
